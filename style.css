@@ -35,7 +35,7 @@ section.directions ol {
   padding-left: 1.2em;
 }
 
-section li {
+section.ingredients li, section.directions li {
   margin-bottom: .75em;
   font-size: 110%;
 }
@@ -72,7 +72,37 @@ aside h4 {
 footer {
   color: #555;
   font-size: smaller;
-  text-align: right;
+  text-align: center;
+  margin-top: 2em;
+}
+
+section.related-recipes {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0;
+  max-width: 30%;
+}
+
+nav ul li:not(:first-child):not(:last-child) {
+  margin: auto 0.5em;
+}
+
+.recipe-thumbnail {
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .prep-label {
